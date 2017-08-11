@@ -5,6 +5,7 @@
  */
 html {
   box-sizing: border-box;
+  font-family: 'PT Sans', sans-serif;
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -23,3 +24,83 @@ body {
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+ .container {
+  align-content: center;
+  background-color: #FFFFFF;
+  border: 20px;
+  margin: 0 auto;
+  width: 450px;
+  position: relative;
+  padding: 5px;
+  padding-top: 100px;
+  top: 10px;
+ }
+
+.tweets {
+  padding: 40px 0;
+}
+
+.tweet {
+  border: 3px solid #DDDDDD;
+  border-radius: 5px;
+  margin: 2em;
+  position: relative;
+}
+
+.module {
+  padding: 20px 0;
+}
+
+.module-header {
+  padding: 10px 0;
+}
+
+.tweet-avatar {
+  border-right: 10px;
+  padding: 0 4px;
+}
+
+.module-title {
+  font-size: 24px;
+  font-weight: 200;
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.tweet-handle {
+  position: absolute;
+  right: 0;
+  top: 30px;
+}
+
+.module-body {
+  background: #fff;
+  padding: 10px;
+}
+
+.tweet-text {
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 1.3;
+  padding: 10px;
+}
+
+.module-footer {
+  font-size: .85em;
+  padding: 10px 0;
+}
+
+.tweet-meta:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.tweet-actions {
+  float: right;
+  visibility: hidden;
+}
+
+.tweet:hover .tweet-actions {
+  visibility: visible;
